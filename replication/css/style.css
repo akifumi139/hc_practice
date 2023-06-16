@@ -1,6 +1,5 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif, "Segoe UI Emoji";
-
     background-color: #edf2f7;
 }
 
@@ -29,36 +28,27 @@ header,
 footer {
     width: 100vw;
     background-color: white;
-    padding: 0px 30px;
 }
 
-header a {
+a {
     text-decoration: none;
+    color: black;
 }
 
-
-header>div {
+#header-menu {
     display: flex;
-    position: relative;
-    max-width: 1125px;
+    justify-content: space-between;
+    max-width: 1000px;
     height: 62px;
     margin: 0 auto;
-}
-
-#header-menu>div {
-    margin-top: 10px;
-}
-
-#header-menu>div:nth-child(1) {
-    padding: flex;
-    position: absolute;
-    left: 0;
-    text-align: center;
+    align-items: center;
 }
 
 .service-icon img {
     display: inline;
     vertical-align: middle;
+    width: 43px;
+    height: 43px;
 }
 
 .service-icon span {
@@ -66,20 +56,9 @@ header>div {
     color: black;
 }
 
-header .service-icon img {
-    width: 43px;
-    height: 43px;
-}
-
 header .service-icon span {
     font-size: 26px;
     font-weight: 600;
-}
-
-#header-menu>div:nth-child(2) {
-    position: absolute;
-    right: 0;
-    margin-top: 16px;
 }
 
 .serch-btn {
@@ -94,7 +73,6 @@ header .service-icon span {
     font-weight: 600;
     background-color: #3ea8ff;
     color: #fff;
-    text-decoration: none;
     border-radius: 8px;
 }
 
@@ -102,7 +80,22 @@ header .service-icon span {
     background-color: #0f83fd;
 }
 
+#mobile-menu {
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    height: 60px;
+    justify-content: space-between;
+    padding: 10px;
+}
 
+#mobile-menu>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @media screen and (min-width: 1000px) {
     #mobile-menu {
@@ -110,72 +103,37 @@ header .service-icon span {
     }
 }
 
-#mobile-menu {
-    display: flex;
-    justify-content: space-between;
-    position: -webkit-sticky;
-    position: sticky;
-    background-color: white;
-    top: 0px;
-    height: 60px;
-}
-
-#mobile-menu a {
-    text-decoration: none;
-}
-
-.outline a {
-    text-decoration: none;
-    color: black;
-}
-
 #outline-btn {
-    margin-right: 70px;
+    margin-right: 10px;
 }
 
 #outline-box {
     display: none;
-    margin-top: 40px;
-    margin-right: -60px;
 }
 
 #outline-box.show {
     display: block;
 }
 
-#mobile-menu .like {
-    color: black;
-    margin-top: -10px;
-    margin-left: -50px;
-}
-
 .account-area {
-    color: black;
+    display: flex;
     font-size: 13px;
     font-weight: 600;
     margin-left: 16px;
+    align-items: center;
 }
 
 .account-area img {
-    width: 43px;
-    height: 43px;
-    border-radius: 43px;
-}
-
-.outline-area {
-    display: flex;
-    margin-top: 10px;
-    margin-right: 16px;
-}
-
-.outline-area .article-box {
-    height: 160px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 4px;
 }
 
 @media screen and (min-width: 800px) {
     #article {
         display: grid;
-        grid-template-rows: 260px auto auto auto auto auto;
+        grid-template-rows: 260px 230px auto auto auto auto;
         grid-template-columns: 1fr 340px;
         grid-template-areas:
             "title title"
@@ -193,13 +151,8 @@ header .service-icon span {
 #article-title {
     grid-area: title;
     margin: 50px auto;
-    max-width: 1125px;
     color: black;
     text-align: center;
-}
-
-#article-title h1 {
-    padding: 10px;
 }
 
 #article-title h1:nth-child(1) {
@@ -210,29 +163,23 @@ header .service-icon span {
     margin: 16px 0px;
 }
 
-#article-title div {
-    visibility: hidden
-}
-
 @media screen and (max-width: 800px) {
+    #article-title {
+        padding: 0 16px;
+    }
+
     #article-title h1 {
         padding: 0;
         font-size: 24px;
-    }
-
-    #article-title div {
-        visibility: visible;
-        font-size: 16px;
     }
 }
 
 .sticky {
     position: -webkit-sticky;
     position: sticky;
-    top: 35px;
-    height: 383px;
+    top: 5px;
+    height: 380px;
 }
-
 
 .article-box {
     background-color: white;
@@ -252,11 +199,6 @@ header .service-icon span {
     border-radius: 20px;
 }
 
-.account-icon {
-    display: inline-block;
-    vertical-align: middle;
-}
-
 #article-info>div {
     position: relative;
 }
@@ -266,14 +208,18 @@ header .service-icon span {
     margin-bottom: 20px;
 }
 
+
+.account-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 16px;
+}
+
+
 .item-name {
     position: absolute;
     left: 0;
     color: #93a5b1;
-}
-
-.item-name>i {
-    margin-right: 8px;
 }
 
 .item-value {
@@ -296,53 +242,11 @@ header .service-icon span {
     display: flex;
 }
 
-#author>div>div {
-    margin-top: 4px;
-    margin-left: 14px;
-}
-
-#author a {
-    text-decoration: none;
-}
-
-#author p {
-    font-size: 14px;
-    margin-top: 5px;
-    padding: 2px;
-}
-
-.account-name {
-    font-weight: 600;
-    color: black;
-}
-
-.sns-links {
-    margin: 10px 0;
-}
-
-.sns-links a {
-    padding-left: 6px;
-}
-
 .flow-icon {
     font-size: 14px;
     border: 0.3mm solid#93a5b1;
     border-radius: 20px;
     padding: 4px 8px;
-}
-
-#author .outline-area {
-    grid-area: outline;
-    margin-top: 30px;
-}
-
-.outline {
-    list-style-type: none;
-    padding: 0;
-    position: relative;
-    font-size: 14px;
-    margin: 10px 0 18px 0;
-    margin-left: 20px;
 }
 
 .outline li {
@@ -370,6 +274,19 @@ header .service-icon span {
     height: 8px;
     border-radius: 50%;
     background-color: #3ea8ff;
+}
+
+#outline-box {
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 1px 1px 8px rgb(231, 229, 229);
+    padding: 5px;
+    margin-right: 10px;
+    width: 300px;
+    top: 60px;
+    right: 0;
 }
 
 @media screen and (max-width: 800px) {
@@ -420,7 +337,7 @@ header .service-icon span {
 }
 
 .image-container {
-    width: 650px;
+    width: 100%;
     margin: 20px auto;
 }
 
@@ -467,7 +384,6 @@ details[close] summary {
 
 .zenn-link>a {
     font-weight: 600;
-    text-decoration: none;
     color: #0f83fd;
 }
 
@@ -483,56 +399,21 @@ details[close] summary {
 }
 
 .action {
-    color: #93a5b1;
-    position: relative;
-    height: 60px;
-}
-
-.like {
-    position: absolute;
-    left: 0;
-}
-
-.like i {
-    text-align: center;
-    padding-top: 12px;
-}
-
-.like span {
-    font-size: 14px;
-    margin-left: 12px;
-}
-
-.action .fa-heart {
-    background-color: #edf2f7;
-    width: 44px;
-    height: 44px;
-    border-radius: 44px;
-    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .tweet {
-    position: absolute;
-    right: 0;
     width: 120px;
     height: 45px;
     border-radius: 44px;
     border: #edf2f7 solid 2px;
     font-size: 15px;
     text-align: center;
-    padding: 3px;
+    padding: 4px;
     padding-top: 10px;
 }
-
-.tweet i {
-    color: #93a5b1;
-}
-
-.tweet span {
-    margin-left: 5px;
-}
-
-
 
 #author-box img {
     display: inline;
@@ -541,18 +422,8 @@ details[close] summary {
     border-radius: 70px;
 }
 
-
 #author-box {
     display: flex;
-}
-
-#author-box>div {
-    margin-left: 20px;
-}
-
-#author-box a {
-    text-decoration: none;
-    color: black;
 }
 
 #discussion {
@@ -565,9 +436,6 @@ details[close] summary {
     padding: 50px;
 }
 
-#discussion>div>p {
-    margin-bottom: 16px;
-}
 
 #recommend {
     grid-area: recommend;
@@ -591,10 +459,6 @@ details[close] summary {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-}
-
-#recommend h2 {
-    margin: 0 0 24px 0;
 }
 
 .recommend-box {
@@ -622,10 +486,6 @@ details[close] summary {
     font-size: 11px;
 }
 
-.recommend-box .info span {
-    margin: 0 2px;
-}
-
 .recommend-box .article-info {
     margin-left: 16px;
 }
@@ -640,18 +500,17 @@ details[close] summary {
 
 footer {
     font-size: 14px;
-    height: 100%;
-}
-
-footer a {
-    color: black;
-    text-decoration: none;
 }
 
 footer>div {
     display: flex;
     max-width: 1125px;
     margin: 0 auto;
+    padding-top: 20px;
+}
+
+.service-info {
+    width: 200px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -667,31 +526,11 @@ footer>div {
         display: block;
         padding-top: 13px;
     }
-}
 
-footer>div>div {
-    margin: 40px 0;
-}
-
-.service-info {
-    width: 240px;
-}
-
-@media screen and (max-width: 1000px) {
     .service-info {
-        width: 300px;
-        margin-left: 30px;
+        width: 280px;
+        margin: 10px auto;
     }
-}
-
-footer .service-icon img {
-    width: 43px;
-    height: 43px;
-}
-
-footer .service-icon span {
-    font-size: 24px;
-    font-weight: 600;
 }
 
 .footer-menu {
@@ -702,11 +541,12 @@ footer .service-icon span {
     width: 100%;
 }
 
-
 @media screen and (max-width: 800px) {
     .footer-menu {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        margin-left: 0px;
+        padding: 2px;
     }
 
     .footer-menu ul {
@@ -715,15 +555,7 @@ footer .service-icon span {
     }
 }
 
-.footer-menu ul {
-    flex: 1;
-}
-
-.footer-menu li {
-    margin-bottom: 12px;
-}
-
 .company-logo {
     width: 120px;
-    margin: 30px auto;
+    margin: 0 auto;
 }

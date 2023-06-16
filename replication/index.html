@@ -24,31 +24,31 @@
                 <a class="login-btn" href='#'>Log in</a>
             </div>
         </div>
-        <hr style="margin: 0;">
     </header>
     <main>
         <div id="article">
             <div id="mobile-menu">
                 <a href="#" class="account-area">
-                    <img class="account-icon" src="./images/account-icon.jpeg">
+                    <img src="./images/account-icon.jpeg">
                     <span>Zenn公式</span>
                 </a>
-                <div class="outline-area">
-                    <div id="outline-box" class="article-box">
-                        <div class="outline">
-                            <a>↑ページトップへ</a>
-                            <ul>
-                                <li><a href="#chapter1">Zenn の執筆方法は 2 種類</a></li>
-                                <li><a href="#chapter2">1. Webエディター</a></li>
-                                <li><a href="#chapter3">2. ローカルのテキストエディター + CLI</a></li>
-                            </ul>
+                <div>
+                    <div id="outline-btn" class="outline-area font-gray">
+                        目次
+                        <i class="fa-solid fa-chevron-up"></i>
+                        <div id="outline-box" class="">
+                            <div class="outline">
+                                <a>↑ページトップへ</a>
+                                <ul>
+                                    <li><a class="chapter" href="#chapter1">Zenn の執筆方法は 2 種類</a></li>
+                                    <li><a class="chapter" href="#chapter2">1. Webエディター</a></li>
+                                    <li><a class="chapter" href="#chapter3">2. ローカルのテキストエディター + CLI</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <a href="#" id="outline-btn" class="font-gray">目次
-                        <i class="fa-solid fa-chevron-up"></i>
-                    </a>
-                    <div class="action">
-                        <div class="like"><i class="fa-regular fa-heart font-gray"></i></div>
+                    <div class="">
+                        <i class="fa-regular fa-heart font-gray"></i>
                     </div>
                 </div>
             </div>
@@ -86,8 +86,10 @@
                     </div>
                     <hr>
                     <div>
-                        <p class="item-name"><i class="fa-regular fa-file-lines"></i>
-                            文章量</p>
+                        <p class="item-name">
+                            <i class="fa-regular fa-file-lines"></i>
+                            文章量
+                        </p>
                         <p class="item-value">約1,200字</p>
                     </div>
                 </div>
@@ -156,7 +158,6 @@
                         <p>※ Mac の場合はCtrlの代わりに⌘キーを使用します。</p>
                     </div>
                 </details>
-
                 <h2 id="chapter3">2. ローカルのテキストエディター + CLI</h2>
                 <hr>
                 <div class="image-container">
@@ -167,19 +168,13 @@
                 </div>
                 <p>自分の好きな環境で執筆したい方は<b>GitHubリポジトリとの連携機能</b>を利用することをおすすめします。リポジトリ連携をすると、特定のブランチに変更があったときに自動でコンテンツがzenn.devに反映されるようになります。
                 </p>
-
                 <p class="zenn-link">📘 <a href="#">Zenn と GitHub リポジトリを連携する →</a></p>
-
-                <p> リポジトリ連携時には、ローカルでmarkdownファイルを作成し、好きなテキストエディターで編集を行います。Zenn
+                <p>リポジトリ連携時には、ローカルでmarkdownファイルを作成し、好きなテキストエディターで編集を行います。Zenn
                     CLIを使うことでブラウザでプレビューしながら執筆することが可能になります。</p>
-
                 <p class="zenn-link">📘 <a href="#">Zenn CLI を導入する →</a></p>
-
                 <hr>
                 <p>オンラインエディターを使う場合も、CLIを使う場合もmarkdownの書き方は変わりません。具体的な記法は下記のリンク先をご覧ください。</p>
-
                 <p class="zenn-link">📘<a href="#"> Zenn のmarkdown記法→</a> </p>
-
                 <div>
                     <div class="github-suggest">
                         <div>
@@ -190,8 +185,14 @@
                         </div>
                     </div>
                     <div class="action">
-                        <div class="like"><i class="fa-regular fa-heart"></i><span>81</span></div>
-                        <div class="tweet"><i class="fa-brands fa-twitter fa-lg"></i><span>ツイート</span></div>
+                        <div class="like">
+                            <i class="fa-regular fa-heart font-gray"></i>
+                            <span>81</span>
+                        </div>
+                        <div class="tweet font-gray">
+                            <i class="fa-brands fa-twitter fa-lg"></i>
+                            <span>ツイート</span>
+                        </div>
                     </div>
                 </div>
 
@@ -215,6 +216,7 @@
                 <hr>
                 <div>
                     <p>ログインするとコメントできます</p>
+                    <div style="height: 20px;"></div>
                     <a class="login-btn" href='#'>Log in</a>
                 </div>
             </div>
@@ -372,7 +374,7 @@
                     <img src="./images/zenn-logo.png" width="40px" height="40px" />
                     <span>Zenn</span>
                 </div>
-                <p class="font-gray" style="font-size: 14px;">エンジニアのための<br>情報共有コミュニティ</p>
+                <p class="font-gray">エンジニアのための<br>情報共有コミュニティ</p>
             </div>
             <div class="footer-menu">
                 <ul>
