@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>（模写）Zennの2種類の執筆方法について</title>
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="header-menu">
+            <div class="service-icon">
+                <img src="./images/zenn-logo.png" />
+                <span>Zenn</span>
+            </div>
+            <div>
+                <a class="serch-btn" href="#">
+                    <i class="fa-solid fa-magnifying-glass font-gray"></i>
+                </a>
+                <a class="login-btn" href='#'>Log in</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="article">
+            <div id="mobile-menu">
+                <a href="#" class="account-area">
+                    <img src="./images/account-icon.jpeg">
+                    <span>Zenn公式</span>
+                </a>
+                <div>
+                    <div id="outline-btn" class="outline-area font-gray">
+                        目次
+                        <i class="fa-solid fa-chevron-up"></i>
+                        <div id="outline-box" class="">
+                            <div class="outline">
+                                <a>↑ページトップへ</a>
+                                <ul>
+                                    <li><a class="chapter" href="#chapter1">Zenn の執筆方法は 2 種類</a></li>
+                                    <li><a class="chapter" href="#chapter2">1. Webエディター</a></li>
+                                    <li><a class="chapter" href="#chapter3">2. ローカルのテキストエディター + CLI</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <i class="fa-regular fa-heart font-gray"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="article-title">
+                <h1>📝</h1>
+                <h1>Zennの2種類の執筆方法について</h1>
+                <span style="color: red;font-weight: bold;">すべて模写コーディングしたものになります</span>
+                <div class="font-gray">2020/09/06に公開・約1,200字</div>
+            </div>
+            <div id="article-info" class="article-box">
+                <div>
+                    <div>
+                        <p class="item-name">
+                            <i class="fa-regular fa-user"></i>著者
+                        </p>
+                        <p class="item-value">
+                            <img class="account-icon" src="./images/account-icon.jpeg">
+                            <span>Zenn公式</span>
+                        </p>
+                    </div>
+                    <hr>
+                    <div>
+                        <p class="item-name">
+                            <i class="fa-regular fa-calendar"></i>公開
+                        </p>
+                        <p class="item-value">2020/09/06</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <p class="item-name">
+                            <i class="fa-solid fa-arrows-rotate"></i>本文更新
+                        </p>
+                        <p class="item-value">
+                            <i class="fa-brands fa-github fa-lg"></i>2021/09/09
+                        </p>
+                    </div>
+                    <hr>
+                    <div>
+                        <p class="item-name">
+                            <i class="fa-regular fa-file-lines"></i>
+                            文章量
+                        </p>
+                        <p class="item-value">約1,200字</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sticky">
+                <div id="author" class="article-box">
+                    <div>
+                        <img class="account-icon" src="./images/account-icon.jpeg">
+                        <div>
+                            <div>
+                                <a class="account-name" href="#">Zenn公式</a>
+                            </div>
+                            <div class="sns-links">
+                                <a class="flow-icon font-gray" href="#">フォロー</a>
+                                <a href="#"><i class="fa-brands fa-github fa-lg font-gray"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter fa-lg font-gray"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Zennの使い方や開発状況を発信する公式アカウントです。</p>
+                </div>
+                <div class="outline-area article-box">
+                    <div>目次</div>
+                    <ul class="outline">
+                        <li><a href="#chapter1">Zenn の執筆方法は 2 種類</a></li>
+                        <li><a href="#chapter2">1. Webエディター</a></li>
+                        <li><a href="#chapter3"> 2. ローカルのテキストエディター + CLI</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="article-content" class="article-box">
+                <div class="tags">
+                    <div><img src="./images/zenn-logo.png"><span>Zenn</span></div>
+                    <div><img src="./images/tech-icon.svg"><span>Tech</span></div>
+                </div>
+                <p>このページではZennで記事や本を作成するときの執筆環境について紹介します。</p>
+
+                <h2 id="chapter1">Zenn の執筆方法は 2 種類</h2>
+                <hr>
+                <p>Zennのコンテンツは次のいずれかの方法で作成します。</p>
+
+                <h2 id="chapter2">1. Webエディター</h2>
+                <hr>
+                <div class="image-container">
+                    <img src="./images/blog/tb04ri7f5v9mdccsehi5jppvfpm3.png" />
+                </div>
+                <p>
+                    ブラウザ上で動くエディターです。Zennにログインした状態で使用します。
+                </p>
+                <details>
+                    <summary>ショートカットを使用しよう</summary>
+                    <div>
+                        <p>オンラインのmarkdownエディターでは、以下のショートカットを使用できます。</p>
+                        <ul>
+                            <li>
+                                <b>Ctrl + P（プレビュー）</b>：markdownがどのように表示されるかをチェックできます。もう一度ショートカットを実行すると、エディターに戻ります。
+                            </li>
+                            <li>
+                                <b>Ctrl + S（内容の保存）</b>：変更内容を保存します。
+                            </li>
+                            <li>
+                                <b>Ctrl + I（埋め込み）</b>：ツイートや YouTube、CodePen、SpeakerDeck
+                                などの埋め込みコンテンツを挿入するためのモーダルが表示されます。
+                            </li>
+                        </ul>
+                        <p>※ Mac の場合はCtrlの代わりに⌘キーを使用します。</p>
+                    </div>
+                </details>
+                <h2 id="chapter3">2. ローカルのテキストエディター + CLI</h2>
+                <hr>
+                <div class="image-container">
+                    <img src="./images/blog/n0tufad6ruthuy0j2hxhffg87hpz.png" />
+                </div>
+                <div class="image-container">
+                    <img src="./images/blog/ve1rve2rb3yvvcat974fxt2rftc1.png" />
+                </div>
+                <p>自分の好きな環境で執筆したい方は<b>GitHubリポジトリとの連携機能</b>を利用することをおすすめします。リポジトリ連携をすると、特定のブランチに変更があったときに自動でコンテンツがzenn.devに反映されるようになります。
+                </p>
+                <p class="zenn-link">📘 <a href="#">Zenn と GitHub リポジトリを連携する →</a></p>
+                <p>リポジトリ連携時には、ローカルでmarkdownファイルを作成し、好きなテキストエディターで編集を行います。Zenn
+                    CLIを使うことでブラウザでプレビューしながら執筆することが可能になります。</p>
+                <p class="zenn-link">📘 <a href="#">Zenn CLI を導入する →</a></p>
+                <hr>
+                <p>オンラインエディターを使う場合も、CLIを使う場合もmarkdownの書き方は変わりません。具体的な記法は下記のリンク先をご覧ください。</p>
+                <p class="zenn-link">📘<a href="#"> Zenn のmarkdown記法→</a> </p>
+                <div>
+                    <div class="github-suggest">
+                        <div>
+                            <i class="fa-brands fa-github fa-lg"></i>
+                            <span>
+                                GitHubで編集を提案
+                            </span>
+                        </div>
+                    </div>
+                    <div class="action">
+                        <div class="like">
+                            <i class="fa-regular fa-heart font-gray"></i>
+                            <span>81</span>
+                        </div>
+                        <div class="tweet font-gray">
+                            <i class="fa-brands fa-twitter fa-lg"></i>
+                            <span>ツイート</span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div id="author-box">
+                    <img class="account-icon" src="./images/account-icon.jpeg">
+                    <div>
+                        <div><a class="account-name" href="#">Zenn公式</a></div>
+                        <div> Zennの使い方や開発状況を発信する公式アカウントです。</div>
+                        <div>
+                            <a class="flow-icon" href="#">フォロー</a>
+                            <i class="fa-brands fa-github fa-lg font-gray"></i>
+                            <i class="fa-brands fa-twitter fa-lg font-gray"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="discussion" class="article-box">
+                <h2>Discussion</h2>
+                <img src="./images/discussion.png" width="380px" />
+                <hr>
+                <div>
+                    <p>ログインするとコメントできます</p>
+                    <div style="height: 20px;"></div>
+                    <a class="login-btn" href='#'>Log in</a>
+                </div>
+            </div>
+        </div>
+        <div id="recommend">
+            <h2>Read next</h2>
+            <div>
+                <div class="recommend-box">
+                    <div class="mark">📚</div>
+                    <div class="article-info">
+                        <div class="title">〇〇について</div>
+                        <div class="info">
+                            <div>
+                                <img class="account-icon" src="./images/account-icon.jpeg">
+                                <span>Zenn公式</span>
+                                <span>2021/01/28</span>
+                                <span><i class="fa-regular fa-heart"></i>55</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommend-box">
+                    <div class="mark">📚</div>
+                    <div class="article-info">
+                        <div class="title">〇〇について</div>
+                        <div class="info">
+                            <div>
+                                <img class="account-icon" src="./images/account-icon.jpeg">
+                                <span>Zenn公式</span>
+                                <span>2021/01/28</span>
+                                <span><i class="fa-regular fa-heart"></i>55</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommend-box">
+                    <div class="mark">📚</div>
+                    <div class="article-info">
+                        <div class="title">〇〇について</div>
+                        <div class="info">
+                            <div>
+                                <img class="account-icon" src="./images/account-icon.jpeg">
+                                <span>Zenn公式</span>
+                                <span>2021/01/28</span>
+                                <span><i class="fa-regular fa-heart"></i>55</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommend-box">
+                    <div class="mark">📚</div>
+                    <div class="article-info">
+                        <div class="title">〇〇について</div>
+                        <div class="info">
+                            <div>
+                                <img class="account-icon" src="./images/account-icon.jpeg">
+                                <span>Zenn公式</span>
+                                <span>2021/01/28</span>
+                                <span><i class="fa-regular fa-heart"></i>55</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommend-box">
+                    <div class="mark">📚</div>
+                    <div class="article-info">
+                        <div class="title">〇〇について</div>
+                        <div class="info">
+                            <div>
+                                <img class="account-icon" src="./images/account-icon.jpeg">
+                                <span>Zenn公式</span>
+                                <span>2021/01/28</span>
+                                <span><i class="fa-regular fa-heart"></i>55</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommend-box">
+                    <div class="mark">📚</div>
+                    <div class="article-info">
+                        <div class="title">〇〇について</div>
+                        <div class="info">
+                            <div>
+                                <img class="account-icon" src="./images/account-icon.jpeg">
+                                <span>Zenn公式</span>
+                                <span>2021/01/28</span>
+                                <span><i class="fa-regular fa-heart"></i>55</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommend-box">
+                    <div class="mark">📚</div>
+                    <div class="article-info">
+                        <div class="title">〇〇について</div>
+                        <div class="info">
+                            <div>
+                                <img class="account-icon" src="./images/account-icon.jpeg">
+                                <span>Zenn公式</span>
+                                <span>2021/01/28</span>
+                                <span><i class="fa-regular fa-heart"></i>55</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommend-box">
+                    <div class="mark">📚</div>
+                    <div class="article-info">
+                        <div class="title">〇〇について</div>
+                        <div class="info">
+                            <div>
+                                <img class="account-icon" src="./images/account-icon.jpeg">
+                                <span>Zenn公式</span>
+                                <span>2021/01/28</span>
+                                <span><i class="fa-regular fa-heart"></i>55</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommend-box">
+                    <div class="mark">📚</div>
+                    <div class="article-info">
+                        <div class="title">〇〇について</div>
+                        <div class="info">
+                            <div>
+                                <img class="account-icon" src="./images/account-icon.jpeg">
+                                <span>Zenn公式</span>
+                                <span>2021/01/28</span>
+                                <span><i class="fa-regular fa-heart"></i>55</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommend-box">
+                    <div class="mark">📚</div>
+                    <div class="article-info">
+                        <div class="title">〇〇について</div>
+                        <div class="info">
+                            <div>
+                                <img class="account-icon" src="./images/account-icon.jpeg">
+                                <span>Zenn公式</span>
+                                <span>2021/01/28</span>
+                                <span><i class="fa-regular fa-heart"></i>55</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <div class="service-info">
+                <div class="service-icon">
+                    <img src="./images/zenn-logo.png" width="40px" height="40px" />
+                    <span>Zenn</span>
+                </div>
+                <p class="font-gray">エンジニアのための<br>情報共有コミュニティ</p>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="#"><b>About</b></a></li>
+                    <li><a href="#">Zennについて</a></li>
+                    <li><a href="#">運営会社</a></li>
+                    <li><a href="#">お知らせ・リリース</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><b>Guides</b></a></li>
+                    <li><a href="#">使い方</a></li>
+                    <li><a href="#">Publication</a></li>
+                    <li><a href="#">よくある質問</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><b>Links</b></a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">メディアキット</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><b>Legal</b></a></li>
+                    <li><a href="#">利用規約</a></li>
+                    <li><a href="#">プライバシーポリシー</a></li>
+                    <li><a href="#">特商法表記</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <img class="company-logo" src="./images/classmethod-logo-small.svg">
+    </footer>
+</body>
+<script>
+    document.getElementById('outline-btn').addEventListener('click', function () {
+        document.getElementById('outline-box').classList.toggle('show');
+    });
+</script>
+
+</html>
