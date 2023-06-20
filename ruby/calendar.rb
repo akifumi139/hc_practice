@@ -9,7 +9,7 @@ opt.on('-m', 'month')
 opt.parse!(ARGV)
 
 month = ARGV.first
-if !month.nil? && month.to_i < 1 && month.to_i > 12
+if !month.nil? && (month.to_i < 1 || month.to_i > 12)
   puts "#{month} is neither a month number (1..12) nor a name"
   return
 end
