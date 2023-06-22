@@ -13,6 +13,8 @@ class Suica
   end
 
   def pay(price)
+    raise(StandardError, '残高が足りてません') if @credit < price
+
     @credit -= price
   end
 

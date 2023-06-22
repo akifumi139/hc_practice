@@ -35,8 +35,6 @@ class VendingMachine
 
     raise(StandardError, '該当する商品がありません') unless index
 
-    raise(StandardError, 'チャージ金額が足りません') if suica.credit <= @stock[index].amount
-
     juice = @stock.delete_at(index)
     @sales += juice.amount
     suica.pay(juice.amount)
