@@ -14,20 +14,15 @@ class VendingMachine
   end
 
   def show_stock
-    items = []
-
-    @stock.each do |item|
-      items.push("#{item.name}(#{item.amount}円)")
+    items = @stock.map do |item|
+      "#{item.name}(#{item.amount}円)"
     end
 
     item_list = items.group_by(&:itself).transform_values(&:count)
 
-    item_menu = []
-    item_list.each do |item, count|
-      item_menu.push("#{item}:#{count}本")
+    item_list.map do |item, count|
+      "#{item}:#{count}本"
     end
-
-    item_menu
   end
 
   def buy(suica, select_item)
