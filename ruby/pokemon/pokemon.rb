@@ -3,11 +3,11 @@
 class Pokemon
   attr_reader :name
 
-  def initialize(_name, _type1, _type2, _hp)
-    @name = _name
-    @type1 = _type1
-    @type2 = _type2
-    @hp = _hp
+  def initialize(name, type1, type2, hp)
+    @name = name
+    @type1 = type1
+    @type2 = type2
+    @hp = hp
   end
 
   def attach
